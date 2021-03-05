@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New message</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/mystyle.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <div class="row">
+        <div class="col-3">
+          <a href="/">FRONTPAGE</a>
+        </div>
+        <div class="col">
+          <a href="/guestbook">GUESTBOOK</a>
+        </div>
+        <div class="col">
+          <a href="/newmessage">NEW MESSAGE</a>
+        </div>
+        <div class="col">
+          <a href="/ajaxmessage">AJAX MESSAGE</a>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <h1>
+        NEW MESSAGE
+      </h1>
+      <br />
+      <p>You can write here a new message to the Guestbook!</p>
+      <br />
+      <form method="POST" action="/newmessage">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="What is our name?"
+          required
+        />
+        <br />
+        <label for="country">Country</label>
+        <input
+          type="text"
+          id="country"
+          name="country"
+          placeholder="Where you live?"
+          required
+        />
+        <br />
+        <label for="message">Message</label>
+        <input
+          type="text"
+          id="message"
+          name="message"
+          placeholder="What you want to tell?"
+          required
+        />
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

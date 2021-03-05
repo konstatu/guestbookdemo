@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AJAX message</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/mystyle.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <div class="row">
+        <div class="col-3">
+          <a href="/">FRONTPAGE</a>
+        </div>
+        <div class="col">
+          <a href="/guestbook">GUESTBOOK</a>
+        </div>
+        <div class="col">
+          <a href="/newmessage">NEW MESSAGE</a>
+        </div>
+        <div class="col">
+          <a href="/ajaxmessage">AJAX MESSAGE</a>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <h1>
+        AJAX MESSAGE
+      </h1>
+      <br />
+      <p>You can write here a new AJAX message to the Guestbook!</p>
+      <br />
+      <form method="POST" action="/ajaxmessage">
+        <label for="name">Name</label>
+        <input type="text" 
+		id="name2" name="name" 
+		placeholder="What is your name?"
+		/>
+        <br />
+        <label for="country">Country</label>
+        <input
+          type="text"
+          id="country2"
+          name="country"
+          placeholder="Where you live?"
+        />
+        <br />
+        <label for="message">Message</label>
+        <input
+          type="text"
+          id="message2"
+          name="message"
+          placeholder="What you want to tell?"
+        />
+        <br />
+        <br />
+        <input type="button" id="ajaxbutton" value="Submit" />
+      </form>
+      <br />
+      <br />
+      <div id="status"></div>
+    </div>
+    <script src="ajax.js"></script>
+  </body>
+</html>
